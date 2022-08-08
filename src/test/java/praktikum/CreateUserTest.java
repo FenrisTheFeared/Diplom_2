@@ -7,8 +7,10 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import praktikum.response.CreateUserResponse;
-import praktikum.response.ResponseErrorMessage;
+import praktikum.client.User;
+import praktikum.client.UserRequest;
+import praktikum.model.CreateUserResponse;
+import praktikum.model.ResponseErrorMessage;
 
 import java.util.HashMap;
 import java.util.Map;

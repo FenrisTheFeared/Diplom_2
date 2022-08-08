@@ -7,10 +7,13 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import praktikum.response.CreateOrderResponse;
-import praktikum.response.CreateUserResponse;
-import praktikum.response.ResponseErrorMessage;
-import praktikum.response.UserOrdersResponse;
+import praktikum.client.Order;
+import praktikum.client.OrderRequest;
+import praktikum.client.User;
+import praktikum.client.UserRequest;
+import praktikum.model.CreateUserResponse;
+import praktikum.model.ResponseErrorMessage;
+import praktikum.model.UserOrdersResponse;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -9,9 +9,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import praktikum.response.CreateOrderResponse;
-import praktikum.response.CreateUserResponse;
-import praktikum.response.ResponseErrorMessage;
+import praktikum.client.Order;
+import praktikum.client.OrderRequest;
+import praktikum.client.User;
+import praktikum.client.UserRequest;
+import praktikum.model.CreateOrderResponse;
+import praktikum.model.CreateUserResponse;
+import praktikum.model.ResponseErrorMessage;
 
 import java.util.HashMap;
 import java.util.List;
@@ -34,7 +38,7 @@ public class CreateOrderParameterizedTestTest {
         this.ingredientsCorrectHash = ingredientsCorrectHash;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "Тестовые данные: {0}, {1}")
     public static Object[][] getOrderData() {
         return new Object[][]{
                 {true, true},

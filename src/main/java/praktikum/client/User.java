@@ -1,4 +1,4 @@
-package praktikum;
+package praktikum.client;
 
 import com.github.javafaker.Faker;
 

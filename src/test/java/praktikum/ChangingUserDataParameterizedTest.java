@@ -7,8 +7,10 @@ import io.restassured.response.Response;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import praktikum.response.CreateUserResponse;
-import praktikum.response.ResponseErrorMessage;
+import praktikum.client.User;
+import praktikum.client.UserRequest;
+import praktikum.model.CreateUserResponse;
+import praktikum.model.ResponseErrorMessage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,7 +28,7 @@ public class ChangingUserDataParameterizedTest {
         this.name = name;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "Тестовые данные: {0}, {1}")
     public static Object[][] getChangingUserData() {
         Faker faker = new Faker();
         return new Object[][] {

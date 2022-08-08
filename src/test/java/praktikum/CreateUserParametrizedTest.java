@@ -9,7 +9,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import praktikum.response.ResponseErrorMessage;
+import praktikum.client.User;
+import praktikum.client.UserRequest;
+import praktikum.model.ResponseErrorMessage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +31,7 @@ public class CreateUserParametrizedTest {
         this.name = name;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}, {2}")
     public static Object[][] getUserData() {
         Faker faker = new Faker();
         return new Object[][] {
